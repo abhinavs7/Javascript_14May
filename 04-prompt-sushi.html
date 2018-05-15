@@ -7,12 +7,18 @@
   <body>
 
     <script type="text/javascript">
-var cuisine = "sushi";
-var like = prompt("Do you like "+cuisine+"?");
-var type = prompt("What kind of "+cuisine+" do you like?");
+var cuisine = prompt("Enter a Cuisine");
+var like = confirm("Do you like "+cuisine+"?");
 
-alert("Like Sushi: "+like);
-alert("Kind: "+type);
+
+if(like){
+alert("Like " + cuisine+" : "+like);
+var type=prompt("What kind of "+cuisine+" do you like?");
+alert("You like: "+type);
+}else{
+  alert("You dont like "+cuisine);
+}
+
     </script>
 
   </body>

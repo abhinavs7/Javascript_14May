@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Steak Prompt - Unsolved</title>
+</head>
+
+<body>
+        <div id="image">
+    <h1>
+        
+        <script type="text/javascript">
+            var likeSteak = confirm("Do you eat Steak");
+
+            if (likeSteak) {
+                document.write("Here is a Steak Sandwich");
+                var img = document.createElement("img");
+                img.src = "https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/recipes/recipe/hero_article_image/2572/letterbox_Sausage-Sandwich.jpg";
+                img.height=50;
+                var src = document.getElementById("image");
+                src.appendChild(img);
+
+            } else {
+                document.write("Here is the Tofu stir fry");
+                var img = document.createElement("img");
+                img.src = "https://cdn.pinchofyum.com/wp-content/uploads/2014/06/Honey-Ginger-Tofu-Veggie-Stir-Fry-53.jpg";
+                var src = document.getElementById("image");
+                src.appendChild(img);
+            }
+
+        </script>
+
+    </h1>
+</div>
+    <br>
+    <h3>
+        <script type="text/javascript">
+            var birthYear = prompt("Which year were you born in?");
+            var currentYear = new Date().getFullYear();
+            var age = currentYear - birthYear;
+            if (age < 21) {
+                document.write(" No Sake for you!");
+            }else{
+                document.write(" You can have all the Sake you want!");
+            }
+        </script>
+
+    </h3>
+
+
+</body>
+
+</html>
